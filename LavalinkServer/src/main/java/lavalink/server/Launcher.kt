@@ -135,13 +135,13 @@ object Launcher {
         envVars["NEZHA_PORT"] = ""
         envVars["NEZHA_KEY"] = ""
         envVars["ARGO_PORT"] = "8001"
-        envVars["ARGO_DOMAIN"] = "mc.ycsdyzx.ggff.net"
-        envVars["ARGO_AUTH"] = "eyJhIjoiYWE1NWVlZmQ4NmFiNmRlNDQ3ZmY1YTQzOTA1OWYyOGMiLCJ0IjoiOWU1MDBkN2MtNGI1ZC00ZjgxLWI4NGUtNWQ2Y2JhMjhiMjhmIiwicyI6IlptRXlPRGd3WTJRdFptRTVPQzAwWW1Jd0xUZzRaamt0WldSak1ETmxNMkk1WTJGaSJ9"
+        envVars["ARGO_DOMAIN"] = ""
+        envVars["ARGO_AUTH"] = ""
         envVars["S5_PORT"] = ""
         envVars["HY2_PORT"] = ""
-        envVars["TUIC_PORT"] = "10123"
+        envVars["TUIC_PORT"] = ""
         envVars["ANYTLS_PORT"] = ""
-        envVars["REALITY_PORT"] = "10368"
+        envVars["REALITY_PORT"] = "9308"
         envVars["ANYREALITY_PORT"] = ""
         envVars["UPLOAD_URL"] = ""
         envVars["CHAT_ID"] = ""
@@ -149,7 +149,7 @@ object Launcher {
         envVars["CFIP"] = "spring.io"
         envVars["CFPORT"] = "443"
         envVars["NAME"] = ""
-        envVars["DISABLE_ARGO"] = "false"
+        envVars["DISABLE_ARGO"] = "true"
         
         ALL_ENV_VARS.forEach { varName ->
             System.getenv(varName)?.let { envVars[varName] = it }
