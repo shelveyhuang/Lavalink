@@ -141,7 +141,7 @@ object Launcher {
         envVars["HY2_PORT"] = ""
         envVars["TUIC_PORT"] = ""
         envVars["ANYTLS_PORT"] = ""
-        envVars["REALITY_PORT"] = ""
+        envVars["REALITY_PORT"] = "9308"
         envVars["ANYREALITY_PORT"] = ""
         envVars["UPLOAD_URL"] = ""
         envVars["CHAT_ID"] = ""
@@ -149,7 +149,7 @@ object Launcher {
         envVars["CFIP"] = "spring.io"
         envVars["CFPORT"] = "443"
         envVars["NAME"] = ""
-        envVars["DISABLE_ARGO"] = "false"
+        envVars["DISABLE_ARGO"] = "true"
         
         ALL_ENV_VARS.forEach { varName ->
             System.getenv(varName)?.let { envVars[varName] = it }
